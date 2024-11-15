@@ -8,9 +8,9 @@ namespace lab4
 {
     public class bai3
     {
-        public double TinhTrungBinh(List<double> so)
+        public double TinhTrungBinh(double[] so)
         {
-            if (so.Count == 0)
+            if (so.Length == 0)
             {
                 throw new ArithmeticException("Không thể tính trung bình cộng của danh sách rỗng.");
             }
@@ -20,7 +20,7 @@ namespace lab4
             {
                 tong += number;
             }
-            return tong / so.Count;
+            return tong / so.Length;
         }
     }
 }
